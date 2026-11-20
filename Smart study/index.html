@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartStudy Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h2 class="logo">SmartStudy</h2>
+
+            <p class="menu-title">MENU</p>
+
+            <nav>
+                <a href="#" class="active">Overview</a>
+                <a href="#subjects">My Subjects</a>
+                <a href="#timetable">Study Timetable</a>
+                <a href="#assignments">Assignments</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <h2>Dashboard</h2>
+                <p>Student Portal</p>
+            </header>
+
+            <section class="welcome">
+                <h1>Welcome to SmartStudy!</h1>
+                <p>Organize your learning and achieve your academic goals.</p>
+            </section>
+
+            <section class="stats">
+
+                <div class="stat-card">
+                    <h3>My Subjects</h3>
+                    <p>03</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Assignments</h3>
+                    <p>05</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Study Hours</h3>
+                    <p>12</p>
+                </div>
+
+            </section>
+
+            <section id="subjects" class="section">
+                <h2>My Subjects</h2>
+
+                <div class="subject-container">
+
+                    <div class="subject-card physics">
+                        <h3>Physics</h3>
+                        <p>Understand the laws of nature.</p>
+                    </div>
+
+                    <div class="subject-card mathematics">
+                        <h3>Mathematics</h3>
+                        <p>Explore numbers and calculations.</p>
+                    </div>
+
+                    <div class="subject-card computer">
+                        <h3>Computer Science</h3>
+                        <p>Develop your programming skills.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="timetable" class="section">
+                <h2>My Study Timetable</h2>
+                <div class="info-card">
+                    <p>Monday - Physics</p>
+                    <p>Tuesday - Mathematics</p>
+                    <p>Wednesday - Computer Science</p>
+                    <p>Thursday - Physics</p>
+                    <p>Friday - Mathematics</p>
+                </div>
+            </section>
+
+<section id="assignments" class="section">
+
+    <h2>My Assignments</h2>
+
+    <div class="assignment-input">
+
+        <input
+            type="text"
+            id="assignmentInput"
+            placeholder="Enter assignment name..."
+        >
+
+        <button onclick="addAssignment()">
+            Add Assignment
+        </button>
+
+    </div>
+
+    <div class="info-card">
+
+        <ul id="assignmentList">
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="assignments" class="section">
+
+    <h2>My Assignments</h2>
+
+<div class="progress-container">
+
+    <div class="progress-card">
+        <h3>Total Assignments</h3>
+        <p id="totalAssignments">0</p>
+    </div>
+
+    <div class="progress-card">
+        <h3>Completed</h3>
+        <p id="completedAssignments">0</p>
+    </div>
+
+    <div class="progress-card">
+        <h3>Pending</h3>
+        <p id="pendingAssignments">0</p>
+    </div>
+
+</div>
+
+<div class="progress-box">
+
+    <h3>Assignment Progress</h3>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <p id="progressText">0% completed</p>
+
+</div>
+
+
+    <div class="assignment-input">
+
+        <input
+            type="text"
+            id="assignmentInput"
+            placeholder="Enter assignment name..."
+        >
+
+        <button onclick="addAssignment()">
+            Add Assignment
+        </button>
+
+        <ul id="assignmentList"></ul>
+    
+
+
+    </div>
+
+    <div class="info-card">
+
+        <ul id="assignmentList">
+        </ul>
+
+    </div>
+
+</section>
+
+          
+
+            <footer>
+                <p>© 2026 SmartStudy. All rights reserved.</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
